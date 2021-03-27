@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardFooterComponent } from './dashboard/dashboard-footer/dashboard-footer.component';
+import { DashboardLandingComponent } from './dashboard/dashboard-landing/dashboard-landing.component';
 import { VisionComponent } from './vision/vision.component';
 
 const appRoutes: Routes = [
   {
     path: 'dashboard',
-    component: DashboardComponent,
+    // component: DashboardLandingComponent,
+    component: DashboardFooterComponent,
     data: {
       title: 'Dashboard',
     },
