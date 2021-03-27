@@ -9,7 +9,7 @@ const appRoutes: Routes = [
     path: 'dashboard',
     component: DashboardComponent,
     data: {
-      title: 'Dashboard',
+      title: 'Home',
     },
   },
   {
