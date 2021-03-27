@@ -8,7 +8,10 @@
   - [x] add logo to header
   - [x] update router ordering
 
-- footer
+- footer as a part of dashboard module, contact us button in navbar can take you to footer
+
+- create modules and components for other pages
+
 - skeleton UIs for other pages (about us, initiatives and partners)
 - landing page
 - content update for other pages
@@ -16,7 +19,7 @@
 - styling
   - update logo to use bold F
   - header button highlight according to https://dribbble.com/shots/4944465-NGO-Landing-Page
-  - header logo, tabs alignment and sizing
+  - [x] header logo, tabs alignment and sizing
 
 aaramse:
 
