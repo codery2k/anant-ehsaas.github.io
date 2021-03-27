@@ -1,18 +1,21 @@
 <nav mat-tab-nav-bar backgroundColor="warn">
-  <button mat-icon-button routerLink="/">
+  <button mat-icon-button routerLink="/" class="ml-5 mr-auto">
     <mat-icon svgIcon="aef-logo" style="transform: scale(2)"></mat-icon>
   </button>
 
-  <a
-    mat-tab-link
-    *ngFor="let route of routes"
-    [routerLink]="route.path"
-    routerLinkActive
-    #rla="routerLinkActive"
-    [routerLinkActiveOptions]="{ exact: true }"
-    [active]="rla.isActive"
-    (click)="activePath = route.path"
-  >
-    {{ route.data.title }}
-  </a>
+  <div class="mr-5">
+    <a
+      class="mr-2"
+      mat-tab-link
+      *ngFor="let route of routes"
+      [routerLink]="route.path"
+      routerLinkActive
+      #rla="routerLinkActive"
+      [routerLinkActiveOptions]="{ exact: true }"
+      [active]="rla.isActive"
+      (click)="activePath = route.path"
+    >
+      {{ route.data.title }}
+    </a>
+  </div>
 </nav>
