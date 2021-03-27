@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { ContactUsComponent } from 'src/app/contact-us/contact-us.component';
 
 @Component({
   selector: 'app-dashboard-footer',
@@ -8,11 +6,7 @@ import { ContactUsComponent } from 'src/app/contact-us/contact-us.component';
   styleUrls: ['./dashboard-footer.component.css'],
 })
 export class DashboardFooterComponent implements OnInit {
-  constructor(public dialog: MatDialog) {}
+  constructor() {}
 
   ngOnInit(): void {}
-
-  openContactDialog(): void {
-    this.dialog.open(ContactUsComponent);
-  }
 }

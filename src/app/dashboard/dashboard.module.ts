@@ -6,6 +6,7 @@ import { DashboardHowCanYouHelpComponent } from './dashboard-how-can-you-help/da
 import { DashboardFooterComponent } from './dashboard-footer/dashboard-footer.component';
 import { MaterialModule } from '../material/material.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     DashboardHowCanYouHelpComponent,
     DashboardFooterComponent,
     DashboardComponent,
+    ContactUsComponent,
   ],
   imports: [CommonModule, MaterialModule],
   exports: [
@@ -21,6 +23,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     DashboardPhotoShowcaseComponent,
     DashboardHowCanYouHelpComponent,
     DashboardFooterComponent,
+    ContactUsComponent,
   ],
 })
 export class DashboardModule {}
