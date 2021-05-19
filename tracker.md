@@ -13,7 +13,12 @@
 
 - create modules and components for other pages
 
-- skeleton UIs for other pages (about us, initiatives and partners)
+- [x] skeleton UIs for other pages (about us, )
+- completely debloat vision compoennt
+
+- skeleton UIs for other pages (initiatives )
+- skeleton UIs for other pages (partners)
+
 - landing page
 - content update for other pages
 
