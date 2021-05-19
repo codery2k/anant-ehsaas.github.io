@@ -10,9 +10,12 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { DocumentationComponent } from './about-us/documentation/documentation.component';
+import { FinancialComponent } from './about-us/financial/financial.component';
 
 @NgModule({
-  declarations: [AppComponent, VisionComponent, HeaderComponent],
+  declarations: [AppComponent, VisionComponent, HeaderComponent, AboutUsComponent, DocumentationComponent, FinancialComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
