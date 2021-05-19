@@ -8,7 +8,8 @@
   - [x] add logo to header
   - [x] update router ordering
 
-- footer as a part of dashboard module, contact us button in navbar can take you to footer
+- [x] footer as a part of dashboard module,
+- contact us button in navbar can take you to footer
 
 - create modules and components for other pages
 

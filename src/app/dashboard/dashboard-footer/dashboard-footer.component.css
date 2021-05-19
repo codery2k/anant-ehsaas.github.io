@@ -1,11 +1,11 @@
 .footer {
-  text-align: center;
   width: 100%;
   position: absolute;
   bottom: 0;
 }
 
 .footer-text {
+  text-align: center;
   filter: brightness(60%);
   font-size: 0.72rem;
 }
