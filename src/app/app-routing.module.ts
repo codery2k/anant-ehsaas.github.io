@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactUsComponent } from './dashboard/contact-us/contact-us.component';
 // import { ContactUsComponent } from './dashboard/contact-us/contact-us.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { VisionComponent } from './vision/vision.component';
@@ -19,13 +20,13 @@ const appRoutes: Routes = [
       title: 'Our Vision',
     },
   },
-  // {
-  //   path: 'contact',
-  //   component: ContactUsComponent,
-  //   data: {
-  //     title: 'Contact Us',
-  //   },
-  // },
+  {
+    path: 'contact',
+    component: DashboardComponent,
+    data: {
+      title: 'Contact Us',
+    },
+  },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 ];
 
