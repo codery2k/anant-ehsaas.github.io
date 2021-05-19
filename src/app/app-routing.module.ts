@@ -1,9 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactUsComponent } from './dashboard/contact-us/contact-us.component';
-// import { ContactUsComponent } from './dashboard/contact-us/contact-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
-import { VisionComponent } from './vision/vision.component';
 
 const appRoutes: Routes = [
   {
@@ -14,10 +12,10 @@ const appRoutes: Routes = [
     },
   },
   {
-    path: 'vision',
-    component: VisionComponent,
+    path: 'about-us',
+    component: AboutUsComponent,
     data: {
-      title: 'Our Vision',
+      title: 'About Us',
     },
   },
   {
