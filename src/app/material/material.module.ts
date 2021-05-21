@@ -8,6 +8,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatTabsModule } from '@angular/material/tabs';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 const modules = [
   MatButtonModule,
@@ -17,6 +18,7 @@ const modules = [
   MatFormFieldModule,
   MatDialogModule,
   MatTabsModule,
+  MatSidenavModule,
 ];
 
 @NgModule({
