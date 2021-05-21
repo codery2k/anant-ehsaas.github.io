@@ -9,19 +9,20 @@
   - [x] update router ordering
 
 - [x] footer as a part of dashboard module,
-- contact us button in navbar can take you to footer
-
-- create modules and components for other pages
 
 - [x] skeleton UIs for other pages (about us, )
-- completely debloat vision compoennt
+
+- [x] convert components in abous us to child components
+- [x] add routes for these child comps
+- add mat-sidenav in about-us, with a router-outlet in mat-sidenav-content, and routerLink as the link in mat-sidenav
 
 - skeleton UIs for other pages (initiatives )
 - skeleton UIs for other pages (partners)
 
-- landing page
 - content update for other pages
 
+- completely debloat vision compoennt
+- contact us button in navbar can take you to footer
 - styling
   - update logo to use bold F
   - header button highlight according to https://dribbble.com/shots/4944465-NGO-Landing-Page
