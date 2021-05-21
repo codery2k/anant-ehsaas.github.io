@@ -6,13 +6,15 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { VisionComponent } from './vision/vision.component';
 import { FinancialComponent } from './financial/financial.component';
 import { DocumentationComponent } from './documentation/documentation.component';
-
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
-  declarations: [AboutUsComponent, VisionComponent, FinancialComponent, DocumentationComponent],
-  imports: [
-    CommonModule,
-    AboutUsRoutingModule
-  ]
+  declarations: [
+    AboutUsComponent,
+    VisionComponent,
+    FinancialComponent,
+    DocumentationComponent,
+  ],
+  imports: [CommonModule, AboutUsRoutingModule, MaterialModule],
 })
-export class AboutUsModule { }
+export class AboutUsModule {}
