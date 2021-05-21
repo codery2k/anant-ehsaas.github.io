@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { AboutUsRoutingModule } from './about-us-routing.module';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { VisionComponent } from './vision/vision.component';
 import { FinancialComponent } from './financial/financial.component';
@@ -15,6 +14,6 @@ import { MaterialModule } from '../material/material.module';
     FinancialComponent,
     DocumentationComponent,
   ],
-  imports: [CommonModule, AboutUsRoutingModule, MaterialModule],
+  imports: [CommonModule, MaterialModule],
 })
 export class AboutUsModule {}
