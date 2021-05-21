@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutUsComponent } from './about-us/about-us.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 
 const appRoutes: Routes = [
@@ -9,13 +8,6 @@ const appRoutes: Routes = [
     component: DashboardComponent,
     data: {
       title: 'Home',
-    },
-  },
-  {
-    path: 'about-us',
-    component: AboutUsComponent,
-    data: {
-      title: 'About Us',
     },
   },
   {

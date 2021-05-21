@@ -9,24 +9,15 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardModule } from './dashboard/dashboard.module';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { DocumentationComponent } from './about-us/documentation/documentation.component';
-import { FinancialComponent } from './about-us/financial/financial.component';
-import { VisionComponent } from './about-us/vision/vision.component';
+import { AboutUsModule } from './about-us/about-us.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    AboutUsComponent,
-    DocumentationComponent,
-    FinancialComponent,
-    VisionComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    AboutUsModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
