@@ -2,14 +2,7 @@
 
 $primary: map-get($custom-theme, primary);
 
-.mat-sidenav-container {
-  position: inherit;
-}
 .mat-sidenav {
   background: mat-color($primary);
   filter: brightness(90%);
-}
-
-.mat-sidenav-container {
-  position: inherit;
 }
