@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
@@ -6,7 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.scss'],
 })
 export class AboutUsComponent implements OnInit {
-  constructor() {}
+  routes: Routes = [];
 
-  ngOnInit(): void {}
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.populateRoutes();
+  }
+
+  populateRoutes() {
+    this.router.config
+      .find((r) => r.path === 'about-us')
+      .children.forEach((route) => {
+        this.routes.push(route);
+        // console.log(route);
+      });
+  }
 }

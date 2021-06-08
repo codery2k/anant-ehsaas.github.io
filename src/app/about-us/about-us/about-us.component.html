@@ -1,10 +1,30 @@
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened fixedInViewport fixedTopGap="48">
-    <mat-nav-list>
+    <!-- <mat-nav-list>
       <a mat-list-item href="#">
         <mat-icon matListIcon color="warn">home</mat-icon>
       </a>
-    </mat-nav-list>
+    </mat-nav-list> -->
+    <nav
+      mat-tab-nav-bar
+      backgroundColor="primary"
+      style="filter: brightness(90%)"
+    >
+      <div>
+        <a
+          mat-tab-link
+          *ngFor="let route of routes"
+          [routerLink]="route.path"
+          routerLinkActive
+          #rla="routerLinkActive"
+          [routerLinkActiveOptions]="{ exact: true }"
+          [active]="rla.isActive"
+          (click)="activePath = route.path"
+        >
+          {{ route.data.title }}
+        </a>
+      </div>
+    </nav>
   </mat-sidenav>
   <mat-sidenav-content>
     <!-- <router-outlet></router-outlet> -->

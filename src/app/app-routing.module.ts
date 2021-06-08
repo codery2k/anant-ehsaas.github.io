@@ -24,14 +24,23 @@ const appRoutes: Routes = [
       {
         path: 'vision',
         component: VisionComponent,
+        data: {
+          title: 'Our Vision',
+        },
       },
       {
         path: 'documentation',
         component: DocumentationComponent,
+        data: {
+          title: 'Documentation',
+        },
       },
       {
         path: 'financial',
         component: FinancialComponent,
+        data: {
+          title: 'Financials',
+        },
       },
     ],
   },
