@@ -14,7 +14,9 @@
 
 - [x] convert components in abous us to child components
 - [x] add routes for these child comps
-- add mat-sidenav in about-us, with a router-outlet in mat-sidenav-content, and routerLink as the link in mat-sidenav
+- [x] add mat-sidenav in about-us,
+      with a router-outlet in mat-sidenav-content,
+- [x] and routerLink as the link in mat-sidenav
 
 - skeleton UIs for other pages (initiatives )
 - skeleton UIs for other pages (partners)
@@ -26,6 +28,7 @@
 - styling
   - update logo to use bold F
   - header button highlight according to https://dribbble.com/shots/4944465-NGO-Landing-Page
+  - make left nav tab appear active on load
   - [x] header logo, tabs alignment and sizing
 
 aaramse:

@@ -1,18 +1,9 @@
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened fixedInViewport fixedTopGap="48">
-    <!-- <mat-nav-list>
-      <a mat-list-item href="#">
-        <mat-icon matListIcon color="warn">home</mat-icon>
-      </a>
-    </mat-nav-list> -->
-    <nav
-      mat-tab-nav-bar
-      backgroundColor="primary"
-      style="filter: brightness(90%)"
-    >
+    <mat-nav-list>
       <div>
         <a
-          mat-tab-link
+          mat-list-item
           *ngFor="let route of routes"
           [routerLink]="route.path"
           routerLinkActive
@@ -24,7 +15,7 @@
           {{ route.data.title }}
         </a>
       </div>
-    </nav>
+    </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
     <!-- <router-outlet></router-outlet> -->
