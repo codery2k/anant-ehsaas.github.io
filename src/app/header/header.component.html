@@ -11,7 +11,7 @@
       [routerLink]="route.path"
       routerLinkActive
       #rla="routerLinkActive"
-      [routerLinkActiveOptions]="{ exact: true }"
+      [routerLinkActiveOptions]="{ exact: false }"
       [active]="rla.isActive"
       (click)="activePath = route.path"
     >
