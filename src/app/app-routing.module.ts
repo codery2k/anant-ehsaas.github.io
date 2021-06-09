@@ -42,6 +42,7 @@ const appRoutes: Routes = [
           title: 'Financials',
         },
       },
+      { path: '', redirectTo: 'vision', pathMatch: 'prefix' },
     ],
   },
   {

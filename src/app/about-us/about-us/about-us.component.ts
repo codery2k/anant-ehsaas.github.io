@@ -19,7 +19,7 @@ export class AboutUsComponent implements OnInit {
     this.router.config
       .find((r) => r.path === 'about-us')
       .children.forEach((route) => {
-        this.routes.push(route);
+        if (route.data) this.routes.push(route);
         // console.log(route);
       });
   }
