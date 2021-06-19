@@ -1,4 +1,6 @@
 - [x] bootstrap css
+      bootstrap css-only with angular-material
+      use bootstrap grid
 - [x] color theme
 - [x] logo update
 - [x] header
