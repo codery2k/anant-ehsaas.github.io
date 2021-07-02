@@ -1,0 +1,16 @@
+.p-greeter {
+  width: fit-content;
+  margin: 5rem auto 0;
+  display: grid;
+}
+
+.span-greeter {
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.span-greeter-author {
+  width: fit-content;
+  margin: 1rem auto 0;
+  filter: brightness(60%);
+}

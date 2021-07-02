@@ -1,0 +1,21 @@
+<nav mat-tab-nav-bar backgroundColor="primary" style="filter: brightness(90%)">
+  <button mat-icon-button routerLink="/" class="ml-5 mr-auto">
+    <mat-icon svgIcon="aef-logo" style="transform: scale(2)"></mat-icon>
+  </button>
+
+  <div class="mr-5">
+    <a
+      class="mr-2 text-uppercase"
+      mat-tab-link
+      *ngFor="let route of routes"
+      [routerLink]="route.path"
+      routerLinkActive
+      #rla="routerLinkActive"
+      [routerLinkActiveOptions]="{ exact: false }"
+      [active]="rla.isActive"
+      (click)="activePath = route.path"
+    >
+      {{ route.data.title }}
+    </a>
+  </div>
+</nav>

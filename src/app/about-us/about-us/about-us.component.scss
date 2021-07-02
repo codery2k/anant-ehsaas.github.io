@@ -1,0 +1,8 @@
+@import "../../../assets/theme.scss";
+
+$primary: map-get($custom-theme, primary);
+
+// .mat-nav-list {
+//   background: mat-color($primary);
+//   filter: brightness(90%);
+// }
