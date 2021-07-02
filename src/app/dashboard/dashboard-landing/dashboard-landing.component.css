@@ -1,3 +1,10 @@
+.landing{
+  background-image: url('../../../assets/img/landing.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-size: cover; */
+}
+
 .p-greeter {
   width: fit-content;
   margin: 5rem auto 0;
