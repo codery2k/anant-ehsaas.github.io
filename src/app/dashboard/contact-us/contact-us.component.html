@@ -1,0 +1,79 @@
+<div>
+  <form
+    ngNoForm
+    class="form"
+    id="contact-form"
+    method="POST"
+    action="mailto:95smiglani@gmail.com"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="ml-auto text-right">
+            <p>
+              Get in touch with us at +911148781108 or leave us a message below!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <mat-form-field appearance="outline" color="accent" class="w-100">
+            <input
+              type="text"
+              matInput
+              placeholder="Name"
+              id="name"
+              name="name"
+              class="text-right"
+            />
+          </mat-form-field>
+        </div>
+        <div class="col-8">
+          <mat-form-field appearance="outline" color="accent" class="w-100">
+            <input
+              type="email"
+              matInput
+              placeholder="Email"
+              id="email"
+              name="email"
+              class="text-right"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ml-auto">
+          <mat-form-field appearance="outline" color="accent" class="w-100">
+            <textarea
+              matInput
+              placeholder="Message"
+              id="message"
+              rows="4"
+              name="message"
+              class="text-right"
+            ></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ml-auto">
+          <button
+            type="submit"
+            form="contact-form"
+            mat-raised-button
+            color="accent"
+            class="form-button mat-body float-right"
+          >
+            Contact Us
+          </button>
+        </div>
+        <!-- <div class="col">
+          <button type="reset" mat-stroked-button class="form-button mat-body">
+            Reset
+          </button>
+        </div> -->
+      </div>
+    </div>
+  </form>
+</div>

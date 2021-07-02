@@ -1,13 +1,57 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactUsComponent } from './contact-us/contact-us.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { VisionComponent } from './vision/vision.component';
+import { AboutUsComponent } from './about-us/about-us/about-us.component';
+import { DocumentationComponent } from './about-us/documentation/documentation.component';
+import { FinancialComponent } from './about-us/financial/financial.component';
+import { VisionComponent } from './about-us/vision/vision.component';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 
 const appRoutes: Routes = [
-  { path: 'contact', component: ContactUsComponent },
-  { path: 'vision', component: VisionComponent },
-  { path: 'dashboard', component: DashboardComponent },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    data: {
+      title: 'Home',
+    },
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+    data: {
+      title: 'About Us',
+    },
+    children: [
+      {
+        path: 'vision',
+        component: VisionComponent,
+        data: {
+          title: 'Our Vision',
+        },
+      },
+      {
+        path: 'documentation',
+        component: DocumentationComponent,
+        data: {
+          title: 'Documentation',
+        },
+      },
+      {
+        path: 'financial',
+        component: FinancialComponent,
+        data: {
+          title: 'Financials',
+        },
+      },
+      { path: '', redirectTo: 'vision', pathMatch: 'prefix' },
+    ],
+  },
+  {
+    path: 'contact',
+    component: DashboardComponent,
+    data: {
+      title: 'Contact Us',
+    },
+  },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 ];
 

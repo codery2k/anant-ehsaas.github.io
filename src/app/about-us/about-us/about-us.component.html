@@ -1,0 +1,23 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened fixedInViewport fixedTopGap="48">
+    <mat-nav-list>
+      <div>
+        <a
+          mat-list-item
+          *ngFor="let route of routes"
+          [routerLink]="route.path"
+          routerLinkActive
+          #rla="routerLinkActive"
+          [routerLinkActiveOptions]="{ exact: true }"
+          [active]="rla.isActive"
+          (click)="activePath = route.path"
+        >
+          {{ route.data.title }}
+        </a>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
