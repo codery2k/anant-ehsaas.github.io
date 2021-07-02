@@ -20,7 +20,7 @@
       with a router-outlet in mat-sidenav-content,
 - [x] and routerLink as the link in mat-sidenav
 
-- Wireframes
+- [x] Wireframes
   https://drive.google.com/drive/u/0/folders/1GfHMk3O1LH5wHZvkVXSzglc3yDVKCokt
 - skeleton UIs for other pages (initiatives )
     - anant-sanrankshan
