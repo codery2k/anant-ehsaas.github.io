@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AboutUsModule } from './about-us/about-us.module';
+import { InitiativesModule } from './initiatives/initiatives.module';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent],
@@ -18,6 +19,7 @@ import { AboutUsModule } from './about-us/about-us.module';
     BrowserAnimationsModule,
     MaterialModule,
     AboutUsModule,
+    InitiativesModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,

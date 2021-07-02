@@ -5,6 +5,11 @@ import { DocumentationComponent } from './about-us/documentation/documentation.c
 import { FinancialComponent } from './about-us/financial/financial.component';
 import { VisionComponent } from './about-us/vision/vision.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { AdvocacyComponent } from './initiatives/advocacy/advocacy.component';
+import { EducationComponent } from './initiatives/education/education.component';
+import { EnvironmentComponent } from './initiatives/environment/environment.component';
+import { HealthComponent } from './initiatives/health/health.component';
+import { InitiativesComponent } from './initiatives/initiatives/initiatives.component';
 
 const appRoutes: Routes = [
   {
@@ -43,6 +48,44 @@ const appRoutes: Routes = [
         },
       },
       { path: '', redirectTo: 'vision', pathMatch: 'prefix' },
+    ],
+  },
+  {
+    path: 'initiatives',
+    component: InitiativesComponent,
+    data: {
+      title: 'Initiatives',
+    },
+    children: [
+      {
+        path: 'education',
+        component: EducationComponent,
+        data: {
+          title: 'Education',
+        },
+      },
+      {
+        path: 'health',
+        component: HealthComponent,
+        data: {
+          title: 'Health',
+        },
+      },
+      {
+        path: 'environment',
+        component: EnvironmentComponent,
+        data: {
+          title: 'Environment',
+        },
+      },
+      {
+        path: 'advocacy',
+        component: AdvocacyComponent,
+        data: {
+          title: 'Advocacy',
+        },
+      },
+      { path: '', redirectTo: 'education', pathMatch: 'prefix' },
     ],
   },
   {
