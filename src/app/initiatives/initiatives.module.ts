@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
 import { MaterialModule } from '../material/material.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { InitiativesComponent } from './initiatives/initiatives.component';
@@ -10,6 +9,7 @@ import { EnvironmentComponent } from './environment/environment.component';
 import { EducationComponent } from './education/education.component';
 import { AdvocacyComponent } from './advocacy/advocacy.component';
 
+import { MatCarouselModule } from '@ngbmodule/material-carousel';
 
 @NgModule({
   declarations: [
@@ -17,9 +17,13 @@ import { AdvocacyComponent } from './advocacy/advocacy.component';
     HealthComponent,
     EnvironmentComponent,
     EducationComponent,
-    AdvocacyComponent
-
+    AdvocacyComponent,
   ],
-  imports: [CommonModule, MaterialModule, AppRoutingModule],
+  imports: [
+    CommonModule,
+    MaterialModule,
+    AppRoutingModule,
+    MatCarouselModule.forRoot(),
+  ],
 })
 export class InitiativesModule {}

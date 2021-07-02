@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdvocacyComponent implements OnInit {
 
+  slides = [
+    {
+      image: '../../../assets/img/photo-showcase.png',
+    },
+    {
+      image: '../../../assets/img/landing.jpg',
+    },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
