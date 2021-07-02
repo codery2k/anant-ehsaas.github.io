@@ -7,6 +7,7 @@ import { FinancialComponent } from './financial/financial.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { MaterialModule } from '../material/material.module';
 import { AppRoutingModule } from '../app-routing.module';
+import { PdfJsViewerModule } from 'ng2-pdfjs-viewer';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,6 @@ import { AppRoutingModule } from '../app-routing.module';
     FinancialComponent,
     DocumentationComponent,
   ],
-  imports: [CommonModule, MaterialModule, AppRoutingModule],
+  imports: [CommonModule, MaterialModule, AppRoutingModule, PdfJsViewerModule],
 })
 export class AboutUsModule {}
