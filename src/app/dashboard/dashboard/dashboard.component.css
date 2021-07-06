@@ -1,3 +1,6 @@
 .container{
-    margin: 0;
+    max-width: 99%;
+}
+.row{
+    margin: 0.5rem;
 }
