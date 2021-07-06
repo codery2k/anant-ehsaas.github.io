@@ -1,3 +1,7 @@
+.col{
+  padding: 0;
+}
+
 .p-greeter {
   width: fit-content;
   margin: 5rem auto 0;
