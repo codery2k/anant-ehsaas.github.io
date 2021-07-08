@@ -4,7 +4,14 @@ import { AboutUsComponent } from './about-us/about-us/about-us.component';
 import { DocumentationComponent } from './about-us/documentation/documentation.component';
 import { FinancialComponent } from './about-us/financial/financial.component';
 import { VisionComponent } from './about-us/vision/vision.component';
+import { ContactUsComponent } from './dashboard/contact-us/contact-us.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { AdvocacyComponent } from './initiatives/advocacy/advocacy.component';
+import { EducationComponent } from './initiatives/education/education.component';
+import { EnvironmentComponent } from './initiatives/environment/environment.component';
+import { HealthComponent } from './initiatives/health/health.component';
+import { InitiativesComponent } from './initiatives/initiatives/initiatives.component';
+import { PartnersComponent } from './partners/partners.component';
 
 const appRoutes: Routes = [
   {
@@ -46,12 +53,57 @@ const appRoutes: Routes = [
     ],
   },
   {
-    path: 'contact',
-    component: DashboardComponent,
+    path: 'initiatives',
+    component: InitiativesComponent,
     data: {
-      title: 'Contact Us',
+      title: 'Initiatives',
+    },
+    children: [
+      {
+        path: 'education',
+        component: EducationComponent,
+        data: {
+          title: 'Education',
+        },
+      },
+      {
+        path: 'health',
+        component: HealthComponent,
+        data: {
+          title: 'Health',
+        },
+      },
+      {
+        path: 'environment',
+        component: EnvironmentComponent,
+        data: {
+          title: 'Environment',
+        },
+      },
+      {
+        path: 'advocacy',
+        component: AdvocacyComponent,
+        data: {
+          title: 'Advocacy',
+        },
+      },
+      { path: '', redirectTo: 'education', pathMatch: 'prefix' },
+    ],
+  },
+  {
+    path:'partners',
+    component:PartnersComponent,
+    data: {
+      title: 'Our Partners',
     },
   },
+  // {
+  //   path: 'contact',
+  //   component: ContactUsComponent,
+  //   data: {
+  //     title: 'Contact Us',
+  //   },
+  // },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 ];
 

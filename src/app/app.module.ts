@@ -10,18 +10,23 @@ import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AboutUsModule } from './about-us/about-us.module';
+import { InitiativesModule } from './initiatives/initiatives.module';
+import { PartnersComponent } from './partners/partners.component';
+import { MatCarouselModule } from '@ngbmodule/material-carousel';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent, HeaderComponent, PartnersComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     AboutUsModule,
+    InitiativesModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
     DashboardModule,
+    MatCarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

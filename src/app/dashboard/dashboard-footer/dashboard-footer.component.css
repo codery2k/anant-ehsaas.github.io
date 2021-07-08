@@ -1,13 +1,13 @@
-.footer {
-  width: 100%;
+/* .footer {
   position: absolute;
   bottom: 0;
-}
+  width: 100%;
+  margin-top: 1rem;
+} */
 
 .footer-text {
-  text-align: center;
   filter: brightness(60%);
-  font-size: 0.72rem;
+  /* font-size: 0.72rem; */
 }
 
 a {
