@@ -6,9 +6,8 @@
 } */
 
 .footer-text {
-  text-align: center;
   filter: brightness(60%);
-  font-size: 0.72rem;
+  /* font-size: 0.72rem; */
 }
 
 a {
