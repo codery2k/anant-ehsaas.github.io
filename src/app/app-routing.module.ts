@@ -97,13 +97,13 @@ const appRoutes: Routes = [
       title: 'Our Partners',
     },
   },
-  {
-    path: 'contact',
-    component: ContactUsComponent,
-    data: {
-      title: 'Contact Us',
-    },
-  },
+  // {
+  //   path: 'contact',
+  //   component: ContactUsComponent,
+  //   data: {
+  //     title: 'Contact Us',
+  //   },
+  // },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 ];
 
