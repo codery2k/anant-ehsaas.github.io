@@ -30,7 +30,7 @@ export class MaterialModule {
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIcon(
       'aef-logo',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/img/aef-logo.svg')
+      sanitizer.bypassSecurityTrustResourceUrl( 'assets/img/aef-logo.svg')
     );
   }
 }

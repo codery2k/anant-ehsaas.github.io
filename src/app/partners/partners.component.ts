@@ -9,10 +9,10 @@ export class PartnersComponent implements OnInit {
 
   slides = [
     {
-      image: '../../../assets/img/how-can-you-help.png',
+      image: 'assets/img/how-can-you-help.png',
     },
     {
-      image: '../../../assets/img/landing.jpg',
+      image: 'assets/img/landing.jpg',
     },
   ];
   constructor() { }
