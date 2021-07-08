@@ -9,10 +9,10 @@ export class AdvocacyComponent implements OnInit {
 
   slides = [
     {
-      image: '../../../assets/img/photo-showcase.png',
+      image: 'assets/img/photo-showcase.png',
     },
     {
-      image: '../../../assets/img/landing.jpg',
+      image: 'assets/img/landing.jpg',
     },
   ];
 
